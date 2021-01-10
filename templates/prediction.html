@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Enter a test data id to display its prediction. (5, 12 or 120 for exemple)</h1>
+        <form method="post">
+            <label> data_id:</label>
+            <input type="text" name="data_id" id="data_id">
+            <input type="submit" value="Calculate"/>
+        </form>
+        {% if result %}
+            The class for this id is : {{ result }}
+        {% endif %}
+    </body>
+</html>
